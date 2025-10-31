@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="enru">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-             <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DocumentГлавная страница | VIP Автосалон</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script>
       tailwind.config = {
           theme: {
@@ -21,7 +21,7 @@
   </script>
 </head>
 <body>
-  <header class="bg-black text-white flex items-center justify-between px-8 py-5 w-full max-w-7xl mx-auto">
+  <header class="fixed top-0 left-40 right-40 bg-black text-white flex items-center justify-between px-8 py-5 z-50">
     <div class="text-gold font-bold text-2xl tracking-wide">VIP</div>
 
     <nav class="hidden md:flex space-x-8">
@@ -41,15 +41,12 @@
       <p class="inline-block px-6 py-2 bg-gold/10 border border-gold rounded-full text-gold text-sm font-medium tracking-wider">
         Премиальный автосалон
       </p>
-
       <h1 class="text-4xl md:text-5xl font-bold leading-tight">
         АВТОСАЛОН <span class="text-gold">VIP</span>
       </h1>
-
       <h3 class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
         Эксклюзивный выбор премиальных автомобилей от ведущих мировых производителей
       </h3>
-
       <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
         <button class="px-8 py-3 bg-gold hover:bg-yellow-700 text-black font-semibold rounded-lg transition transform hover:scale-105 shadow-lg">
           Смотреть каталог
@@ -61,240 +58,434 @@
     </div>
   </section>
 
-  <section class="plus-section text-center mt-64 space-y-4">
-    <h3 class="font-bold text-4xl mx-auto">Почему выбирают <span class="text-gold">VIP</span></h3>
-    <p class="opacity-40 mx-auto">Мы предлагаем не просто автомобили, а комплексный премимальный сервис</p>
-
-    <div class="flex space-x-6 mt-8">
-      <div class="text-left max-w-xs space-y-5 bg-cards p-5 border-white/10 hover:border-gold/50 transition border rounded-md">
-        <h4>Гарантия качества</h4>
-        <p class="opacity-40">Все автомобили проходят тщательную проверку и имеют официальную гарантию</p>
-      </div>
-      <div class="text-left max-w-xs space-y-5 bg-cards p-5 border-white/10 border rounded-md">
-        <h4>Премиум бренды</h4>
-        <p class="opacity-40">Работаем только с проверенными производителями класса люкс</p>
-      </div>
-      <div class="text-left max-w-xs space-y-5 bg-cards p-5 border-white/10 border rounded-md">
-        <h4>Индивидуальный подход</h4>
-        <p class="opacity-40">Персональный менеджер поможет подобрать идеальный автомобиль</p>
-      </div>
-      <div class="text-left max-w-xs space-y-5 bg-cards p-5 border-white/10 border rounded-md">
-        <h4>Быстрое оформление</h4>
-        <p class="opacity-40">Минимум документов и максимум удобства при покупке</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="catalog">
-    <h3>Наш каталог</h3>
-    <p>Эксклюзивные коллекции премиальных автомобилей</p>
-
-    <div class="card">
-      <h5>Премиум Спорткар</h5>
-      <p>от 15 000 000 ₽</p>
-      <p>0-100 км/ч за 3.2 сек.</p>
-      <p>600 л/с</p>
-      <p>Полный привод</p>
-      <button>Узнать подробнее</button>
-    </div>
-    <div class="card">
-      <h5>Бизнес Седан</h5>
-      <p>от 8 500 000 ₽</p>
-      <p>Кожаный салон</p>
-      <p>360 л.с.</p>
-      <p>Автопилот</p>
-      <button>Узнать подробнее</button>
-    </div>
-    <div class="card">
-      <h5>Роскошный Внедорожник</h5>
-      <p>от 12 000 000 ₽</p>
-      <p>7 мест</p>
-      <p>450 л/с</p>
-      <p>Пневмоподвеска</p>
-      <button>Узнать подробнее</button>
-    </div>
-    <div class="card">
-      <h5>Роскошный Внедорожник</h5>
-      <p>от 12 000 000 ₽</p>
-      <p>7 мест</p>
-      <p>450 л/с</p>
-      <p>Пневмоподвеска</p>
-      <button>Узнать подробнее</button>
-    </div>
-    <div class="slider">
-      ...
-    </div>
-    <button>Посмотреть весь каталог</button>
-  </section>
-
-  <section class="about-company">
-    <h3>О компании <span>VIP</span></h3>
-    <p>Автосалон VIP - это эталон сервиса на рынке luxury-
-      автомобилей. Мы предлагаем нашим клиентам не просто покупку автомобиля, а погружение в мир роскоши и комфорта.
-
-      Наша миссия — сделать владение автомобилем премиум-класса доступным и приятным для каждого клиента. Мы работаем с ведущими мировыми производителями и гарантируем подлинность и качество каждого автомобиля</p>
-    <p>Более 15 лет на рынке премиальных автомобилей</p>
-    <p>Свыше 5000 довольных клиентов</p>
-    <p>Официальный дилер ведущих брендов</p>
-    <p>Собственный сервисный центр</p>
-    <p>Гибкие условия финансирования</p>
-    <p>Программа Trade-In с выгодными условиями</p>
-
-    <div class="card">
-      <h5>15+</h5>
-      <p>Лет на рынке</p>
-    </div>
-    <div class="card">
-      <h5>5К+</h5>
-      <p>Довольных клиентов</p>
-    </div>
-    <div class="card">
-      <h5>50+</h5>
-      <p>Моделей в наличии</p>
-    </div>
-    <div class="card">
-      <h5>24/7</h5>
-      <p>Поддержка</p>
-    </div>
-  </section>
-
-  <section class="feedback">
-    <h3>Отзывы наших <span>клиентов</span></h3>
-    <p>Мы гордимся доверием наших клиентов</p>
-
-    <div class="card">
-      <p>“Приобретал автомобиль премиум-класса в VIP. Отличный сервис, профессиональная консультация и быстрое оформление. Очень доволен покупкой и обслуживанием. Рекомендую всем!”</p>
-      <hr>
-      <p>Дмитрий Соколов</p>
-      <p>15 октября 2025</p>
-    </div>
-    <div class="card">
-      <p>“Замечательный автосалон! Помогли подобрать идеальный внедорожник, предоставили выгодные условия по Trade-In. Персонал очень внимательный и компетентный. Спасибо за сервис!”</p>
-      <hr>
-      <p>Елена Петровна</p>
-      <p>24 декабря 2023</p>
-    </div>
-    <div class="card">
-      <p>“Это уже третья покупка автомобиля в VIP. Всегда безупречный сервис, прозрачные условия и качественные автомобили. Буду и дальше обращаться только сюда. Лучший автосалон в городе!”</p>
-      <hr>
-      <p>Александр Морозов</p>
-      <p>22 сентября 2024</p>
-    </div>
-  </section>
-
-  <section class="placement">
-    <h3>Где мы <span>находимся</span></h3>
-    <p>Посетите наш автосалон в центре Москвы</p>
-
-    <div class="map">
-      <img src="..." alt="map">
-    </div>
-    <div class="cards">
-      <div class="card">
-        <h5>Адрес автосалона</h5>
-        <p>г. Москва, Кутузовский проспект, дом 12</p>
-        <p>Рядом с метро "Киевская", 5 минут пешком</p>
-        <button>Построить маршрут -></button>
-      </div>
-      <div class="card">
-        <h5>Парковка для гостей</h5>
-        <p>Бесплатная охраняемая парковка на территории автосалона</p>
-      </div>
-      <div class="card">
-        <h5>Режим работы</h5>
-        <div>
-          <p>Понедельник - Пятница</p>
-          <p>09:00 - 21:00</p>
+  <section class="plus-section text-center mt-16 py-16 bg-black">
+    <h3 class="font-bold text-4xl mb-2">Почему выбирают <span class="text-gold">VIP</span></h3>
+    <p class="opacity-60 text-lg max-w-2xl mx-auto">
+      Мы предлагаем не просто автомобили, а комплексный премиальный сервис
+    </p>
+    <div class="flex flex-col sm:flex-row gap-6 mt-24 justify-center text-left">
+      <div class="cursor-pointer max-w-xs bg-gray-900/30 border border-white/10 rounded-xl p-6 hover:border-gold/50 transition duration-300 group">
+        <div class="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-gold/30 transition">
+          <img src="a" alt="a">
         </div>
-        <div>
-          <p>Суббота - Воскресенье</p>
-          <p>10:00 - 20:00</p>
+        <h4 class="text-xl font-semibold mb-2">Гарантия качества</h4>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Все автомобили проходят тщательную проверку и имеют официальную гарантию
+        </p>
+      </div>
+      <div class="cursor-pointer max-w-xs bg-gray-900/30 border border-white/10 rounded-xl p-6 hover:border-gold/50 transition duration-300 group text-left">
+        <div class="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-gold/30 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gold">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.563.563 0 01.786.786l1.219 1.219a.563.563 0 01-.786.786l-1.219-1.219a.563.563 0 01-.786-.786zm-6.44 6.44a.563.563 0 01.786.786L9.44 16.346a.563.563 0 01-.786.786l-1.219-1.219a.563.563 0 01-.786-.786zm12-12a.563.563 0 01.786.786L16.346 9.44a.563.563 0 01-.786.786l-1.219-1.219a.563.563 0 01-.786-.786zm-6.44 6.44a.563.563 0 01.786.786l1.219 1.219a.563.563 0 01-.786.786l-1.219-1.219a.563.563 0 01-.786-.786z" />
+          </svg>
+        </div>
+        <h4 class="text-xl font-semibold mb-2">Премиум бренды</h4>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Работаем только с проверенными производителями класса люкс
+        </p>
+      </div>
+      <div class="cursor-pointer max-w-xs bg-gray-900/30 border border-white/10 rounded-xl p-6 hover:border-gold/50 transition duration-300 group text-left">
+        <div class="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-gold/30 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gold">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 008.669-8.669l-2.104-2.104a3.847 3.847 0 00-5.356-5.356L12 4.847l-3.018-3.018a3.847 3.847 0 00-5.356 5.356L2.104 8.284a9.38 9.38 0 008.669 8.669L12 18.128z" />
+          </svg>
+        </div>
+        <h4 class="text-xl font-semibold mb-2">Индивидуальный подход</h4>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Персональный менеджер поможет подобрать идеальный автомобиль
+        </p>
+      </div>
+      <div class="cursor-pointer max-w-xs bg-gray-900/30 border border-white/10 rounded-xl p-6 hover:border-gold/50 transition duration-300 group text-left">
+        <div class="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-gold/30 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gold">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h4 class="text-xl font-semibold mb-2">Быстрое оформление</h4>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Минимум документов и максимум удобства при покупке
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog text-center mt-16 py-16 bg-black">
+    <h3 class="font-bold text-4xl mb-2">Наш <span class="text-gold">каталог</span></h3>
+    <p class="opacity-60 text-lg max-w-2xl mx-auto">
+      Эксклюзивные коллекции премиальных автомобилей
+    </p>
+    <div class="flex flex-col sm:flex-row gap-6 mt-28 justify-center">
+      <div class="cursor-pointer min-w-72 max-w-72 bg-gray-900/30 border border-white/10 rounded-xl overflow-hidden hover:border-gold/50 transition duration-300 group">
+        <div class="relative">
+          <img src="img/catalog/sportcar-1.jpg" alt="Премиум Спорткар" class="w-full h-40 object-cover hover:scale-110 transition rounded-md group">
+          <span class="absolute top-3 right-3 bg-gold text-black text-xs font-medium px-2 py-1 rounded-full">Спортивные</span>
+        </div>
+        <div class="p-6  text-left">
+          <h5 class="text-lg font-semibold">Премиум Спорткар</h5>
+          <p class="text-gold font-medium">от 15 000 000 ₽</p>
+          <ul class="space-y-1 mt-3 text-xs opacity-60">
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> 0-100 км/ч за 3.2 сек.</li>
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> 600 л.с.</li>
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> Полный привод</li>
+          </ul>
+          <button class="w-full mt-5 py-1 bg-gold hover:bg-yellow-700 text-black text-sm font-medium rounded-md transition">
+            Узнать подробнее
+          </button>
+        </div>
+      </div>
+      <div class="cursor-pointer min-w-72  max-w-72  bg-gray-900/30 border border-white/10 rounded-xl overflow-hidden hover:border-gold/50 transition duration-300">
+        <div class="relative">
+          <img src="img/catalog/seedan-1.jpg" alt="Бизнес Седан" class="w-full h-40 object-cover hover:scale-110 transition rounded-md">
+          <span class="absolute top-3 right-3 bg-gold text-black text-xs font-medium px-2 py-1 rounded-full">Седаны</span>
+        </div>
+        <div class="p-6 text-left">
+          <h5 class="text-lg font-semibold">Бизнес Седан</h5>
+          <p class="text-gold font-medium">от 8 500 000 ₽</p>
+          <ul class="space-y-1 mt-3 text-xs opacity-60">
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> Кожаный салон</li>
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> 360 л.с.</li>
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> Автопилот</li>
+          </ul>
+          <button class="w-full mt-5 py-1 bg-gold hover:bg-yellow-700 text-black text-sm font-medium rounded-md transition">
+            Узнать подробнее
+          </button>
+        </div>
+      </div>
+      <div class="cursor-pointer min-w-72 max-w-72  bg-gray-900/30 border border-white/10 rounded-xl overflow-hidden hover:border-gold/50 transition duration-300 group">
+        <div class="relative">
+          <img src="img/catalog/jeep-1.jpg" alt="Роскошный Внедорожник" class="w-full h-40 object-cover hover:scale-110 transition rounded-md">
+          <span class="absolute top-3 right-3 bg-gold text-black text-xs font-medium px-2 py-1 rounded-full">Внедорожники</span>
+        </div>
+        <div class="p-6 text-left">
+          <h5 class="text-lg font-semibold">Роскошный Внедорожник</h5>
+          <p class="text-gold font-medium">от 12 000 000 ₽</p>
+          <ul class="space-y-1 mt-3 text-xs opacity-60">
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> 7 мест</li>
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> 450 л.с.</li>
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> Пневмоподвеска</li>
+          </ul>
+          <button class="w-full mt-5 py-1 bg-gold hover:bg-yellow-700 text-black text-sm font-medium rounded-md transition">
+            Узнать подробнее
+          </button>
+        </div>
+      </div>
+      <div class="cursor-pointer min-w-72 max-w-72 bg-gray-900/30 border border-white/10 rounded-xl overflow-hidden hover:border-gold/50 transition duration-300 group">
+        <div class="relative">
+          <img src="img/catalog/electro-1.jpg" alt="Электрокар" class="w-full h-40 object-cover hover:scale-110 transition rounded-md">
+          <span class="absolute top-3 right-3 bg-gold text-black text-xs font-medium px-2 py-1 rounded-full">Электро</span>
+        </div>
+        <div class="p-6 text-left s">
+          <h5 class="text-lg font-semibold">Электрический Люкс</h5>
+          <p class="text-gold font-medium">от 18 000 000 ₽</p>
+          <ul class="space-y-1 mt-3 text-xs opacity-60">
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> Запас хода 600 км</li>
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> 500 л.с.</li>
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> Беспроводная зарядка</li>
+          </ul>
+          <button class="w-full mt-5 py-1 bg-gold hover:bg-yellow-700 text-black text-sm font-medium rounded-md transition">
+            Узнать подробнее
+          </button>
         </div>
       </div>
     </div>
+    <div id="slider-dots" class="space-x-2 mt-5">
+      <button data-slide="0" class="w-4 h-1 bg-white/30 rounded-full hover:bg-gold/50 transition"></button>
+      <button data-slide="1" class="w-4 h-1 bg-white/30 rounded-full hover:bg-gold/50 transition"></button>
+      <button data-slide="2" class="w-4 h-1 bg-white/30 rounded-full hover:bg-gold/50 transition"></button>
+    </div>
+    <button class="mt-12 px-8 py-1 bg-white hover:bg-gray-100 text-black font-medium rounded-md shadow-lg transition transform hover:scale-105 text-sm">
+      Посмотреть весь каталог
+    </button>
   </section>
 
-  <section class="form-contact">
-    <div class="contacts">
-      <h5>Контактная информация</h5>
-      <div>
-        <img src="..." alt="a">
-        <h5>Адрес</h5>
-        <p>г.Москва, Кутузовский проспект, д. 12</p>
+  <section class="about-company text-center mt-16 py-16 bg-black">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex flex-col lg:flex-row gap-12 items-center">
+        <div class="lg:w-1/2 text-left space-y-6">
+          <h3 class="font-medium text-3xl mb-2">О компании <span class="text-gold">VIP</span></h3>
+          <p class="text-gray-400 leading-relaxed text-md">
+            Автосалон VIP — это эталон сервиса на рынке luxury-автомобилей. Мы предлагаем нашим клиентам не просто покупку автомобиля, а погружение в мир роскоши и комфорта.
+          </p>
+          <p class="text-gray-400 leading-relaxed text-md">
+            Наша миссия — сделать владение автомобилем премиум-класса доступным и приятным для каждого клиента. Мы работаем с ведущими мировыми производителями и гарантируем подлинность и качество каждого автомобиля.
+          </p>
+          <ul class="space-y-2 mt-4 text-sm opacity-80">
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> Более 15 лет на рынке премиальных автомобилей</li>
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> Свыше 5000 довольных клиентов</li>
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> Официальный дилер ведущих брендов</li>
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> Собственный сервисный центр</li>
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> Гибкие условия финансирования</li>
+            <li class="flex items-start"><span class="inline-block w-2 h-2 bg-gold rounded-full mt-1 mr-2"></span> Программа Trade-In с выгодными условиями</li>
+          </ul>
+        </div>
+        <div class="lg:w-1/2 grid grid-cols-2 gap-6 justify-center">
+          <div class="space-y-6">
+            <div class="bg-gray-900/30 border border-white/10 rounded-xl p-6 text-center hover:shadow-lg transition duration-300">
+              <h5 class="text-3xl font-medium text-gold">15+</h5>
+              <p class="text-gray-400 mt-2 text-lg">Лет на рынке</p>
+            </div>
+            <div class="bg-gray-900/30 border border-white/10 rounded-xl p-6 text-center hover:shadow-lg transition duration-300">
+              <h5 class="text-3xl font-medium text-gold">50+</h5>
+              <p class="text-gray-400 mt-2">Моделей в наличии</p>
+            </div>
+          </div>
+          <div class="space-y-6 mt-8">
+            <div class="bg-gray-900/30 border border-white/10 rounded-xl p-6 text-center hover:shadow-lg transition duration-300">
+              <h5 class="text-3xl font-medium text-gold">5К+</h5>
+              <p class="text-gray-400 mt-2">Довольных клиентов</p>
+            </div>
+            <div class="bg-gray-900/30 border border-white/10 rounded-xl p-6 text-center hover:shadow-lg transition duration-300">
+              <h5 class="text-3xl font-medium text-gold">24/7</h5>
+              <p class="text-gray-400 mt-2">Поддержка</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <img src="..." alt="a">
-        <h5>Телефон</h5>
-        <p>+7 923 678 34 56</p>
-      </div>
-      <div>
-        <img src="..." alt="a">
-        <h5>Email</h5>
-        <p>info@vip-auto.ru</p>
-      </div>
-      <div>
-        <img src="..." alt="a">
-        <h5>Режим работы</h5>
-        <p>Пн-Вс: 09:00 - 21:00</p>
-      </div>
-    </div>
-    <div class="special-offer">
-      <h5>Специальное предложение!</h5>
-      <p>Запишитесь на тест-драйв сегодня и получите скидку 5% на любой автомобиль из нашего каталога.</p>
-    </div>
-    <div class="form">
-      <form method="post">
-        <h5>Оставьте заявку</h5>
-        <label for="name">Имя</label>
-        <input type="text" name="name" placeholder="Введите ваше имя">
-        <label for="phone">Телефон</label>
-        <input type="tel" name="phone" placeholder="+7 (___) ___-__-__ ">
-        <label for="email">Email</label>
-        <input type="email" name="email" placeholder="example@mail.ru">
-        <label for="message">Сообщение</label>
-        <textarea name="message" placeholder="Расскажите, какой автомобиль вас интересует..."></textarea>
-        <button type="submit">Отправить заявку</button>
-      </form>
     </div>
   </section>
 
-  <footer>
-    <div>
-      <h5>VIP</h5>
-      <p>Премиальный автосалон класса люкс. Эксклюзивные автомобили для требовательных клиентов</p>
-      <div>
-        <img src="..." alt="a">
-        <img src="..." alt="a">
-        <img src="..." alt="a">
-        <img src="..." alt="a">
+  <section class="bg-black py-24 text-center">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-semibold mb-4">
+        Отзывы наших <span class="text-gold">клиентов</span>
+      </h2>
+      <p class="text-gray-400 mb-12">Мы гордимся доверием наших клиентов</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+        <div class="bg-gray-900/30 border border-white/10 rounded-xl p-6 hover:border-gold/60 transition duration-300">
+          <div class="flex text-gold mb-4 text-xl">
+            ★★★★★
+          </div>
+          <p class="text-gray-200 leading-relaxed">
+            “Приобретал автомобиль премиум-класса в VIP. Отличный сервис, профессиональная консультация и быстрое оформление. Очень доволен покупкой и обслуживанием. Рекомендую всем!”
+          </p>
+          <hr class="my-6 border-white/10">
+          <div class="flex items-center gap-3">
+            <img src="img/feedback/man-1.jpg" alt="Дмитрий Соколов" class="w-10 h-10 rounded-full object-cover">
+            <div>
+              <p class="font-medium text-gray-200">Дмитрий Соколов</p>
+              <p class="text-sm text-gray-500">15 октября 2025</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-900/30 border border-white/10 rounded-xl p-6 hover:border-gold/60 transition duration-300">
+          <div class="flex text-gold mb-4 text-xl">
+            ★★★★★
+          </div>
+          <p class="text-gray-200 leading-relaxed">
+            “Замечательный автосалон! Помогли подобрать идеальный внедорожник, предоставили выгодные условия по Trade-In. Персонал очень внимательный и компетентный. Спасибо за сервис!”
+          </p>
+          <hr class="my-6 border-white/10">
+          <div class="flex items-center gap-3">
+            <img src="img/feedback/woman-1.jpg" alt="Елена Петровна" class="w-10 h-10 rounded-full object-cover">
+            <div>
+              <p class="font-medium text-gray-200">Елена Петровна</p>
+              <p class="text-sm text-gray-500">24 декабря 2023</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-900/30 border border-white/10 rounded-xl p-6 hover:border-gold/60 transition duration-300">
+          <div class="flex text-gold mb-4 text-xl">
+            ★★★★★
+          </div>
+          <p class="text-gray-200 leading-relaxed">
+            “Это уже третья покупка автомобиля в VIP. Всегда безупречный сервис, прозрачные условия и качественные автомобили. Буду и дальше обращаться только сюда. Лучший автосалон в городе!”
+          </p>
+          <hr class="my-6 border-white/10">
+          <div class="flex items-center gap-3">
+            <img src="img/feedback/man-2.jpeg" alt="Александр Морозов" class="w-10 h-10 rounded-full object-cover">
+            <div>
+              <p class="font-medium text-gray-200">Александр Морозов</p>
+              <p class="text-sm text-gray-500">22 сентября 2024</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div>
-      <h5>Быстрые ссылки</h5>
-      <p>Главная</p>
-      <p>Каталог</p>
-      <p>О нас</p>
-      <p>Контакты</p>
+  </section>
+
+
+  <section class="text-center mt-28">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-semibold mb-4">
+        Где мы <span class="text-gold">находимся</span>
+      </h2>
+      <p class="text-gray-400 mb-12">Посетите наш автосалон в центре Москвы</p>
+      <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 items-center">
+        <div>
+          <iframe
+              class="rounded-xl w-full h-[480px]"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.168818702752!2d37.526981400000004!3d55.7381957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54be505f304ed%3A0x225b457b1b0a378a!2z0JrRg9GC0YPQt9C-0LLRgdC60LjQuSDQv9GA0L7RgdC_LiwgMTIsINCc0L7RgdC60LLQsCwgMTIxMTcw!5e0!3m2!1sru!2sru!4v1761888593862!5m2!1sru!2sru"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="flex flex-col gap-5 items-center lg:items-start">
+          <div class="border border-white/10 rounded-xl w-full max-w-sm p-6 text-left bg-gray-900/30">
+            <h5 class="text-lg font-semibold">Адрес салона</h5>
+            <p class="opacity-60 mt-3 text-sm">г. Москва, Кутузовский проспект, дом 12</p>
+            <p class="opacity-40 text-sm">Рядом с метро "Киевская", 5 минут пешком</p>
+            <button class="text-gold mt-5 hover:text-gray-500 transition">Построить маршрут →</button>
+          </div>
+          <div class="border border-white/10 rounded-xl w-full max-w-sm p-6 text-left bg-gold/20">
+            <h5 class="text-lg font-semibold">Парковка для гостей</h5>
+            <p class="opacity-70 mt-3 text-sm">
+              Бесплатная охраняемая парковка на территории автосалона
+            </p>
+          </div>
+          <div class="border border-white/10 rounded-xl w-full max-w-sm p-6 text-left bg-gray-900/30">
+            <h5 class="text-lg font-semibold mb-3">Режим работы</h5>
+            <div class="flex justify-between text-sm opacity-80 border-b border-white/10 pb-2">
+              <span>Понедельник – Пятница</span>
+              <span>09:00 – 21:00</span>
+            </div>
+            <div class="flex justify-between text-sm opacity-80 pt-2">
+              <span>Суббота – Воскресенье</span>
+              <span>10:00 – 20:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div>
-      <h5>Услуги</h5>
-      <p>Продажа авто</p>
-      <p>Trade-In</p>
-      <p>Кредитование</p>
-      <p>Сервис</p>
+  </section>
+
+  <section class="text-center mt-28">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-semibold mb-4">
+        Свяжитесь с <span class="text-gold">нами</span>
+      </h2>
+      <p class="text-gray-400 mb-12">Готовы помочь вам найти автомобиль вашей мечты</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left items-center">
+        <div class="space-y-8">
+          <div class="border border-white/20 rounded-xl bg-gray-900/30 p-8 space-y-6">
+            <h5 class="text-xl font-medium">Контактная информация</h5>
+            <div class="flex gap-5 items-center">
+              <div class="bg-gold/30 w-10 h-10 rounded-md flex items-center justify-center">
+                <i class="fas fa-map-marker-alt text-gold"></i>
+              </div>
+              <div>
+                <h5>Адрес</h5>
+                <p class="opacity-40 text-sm">г.Москва, Кутузовский проспект, д. 12</p>
+              </div>
+            </div>
+            <div class="flex gap-5 items-center">
+              <div class="bg-gold/30 w-10 h-10 rounded-md flex items-center justify-center">
+                <i class="fas fa-phone-alt text-gold"></i>
+              </div>
+              <div>
+                <h5>Телефон</h5>
+                <p class="opacity-40 text-sm">+7 923 678 34 56</p>
+              </div>
+            </div>
+            <div class="flex gap-5 items-center">
+              <div class="bg-gold/30 w-10 h-10 rounded-md flex items-center justify-center">
+                <i class="fas fa-envelope text-gold"></i>
+              </div>
+              <div>
+                <h5>Email</h5>
+                <p class="opacity-40 text-sm">info@vip-auto.ru</p>
+              </div>
+            </div>
+            <div class="flex gap-5 items-center">
+              <div class="bg-gold/30 w-10 h-10 rounded-md flex items-center justify-center">
+                <i class="fas fa-clock text-gold"></i>
+              </div>
+              <div>
+                <h5>Режим работы</h5>
+                <p class="opacity-40 text-sm">Пн-Вс: 09:00 - 21:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="border border-white/20 rounded-xl bg-gold/20 p-8 space-y-4">
+            <h5 class="text-xl font-medium">Специальное предложение!</h5>
+            <p class="text-sm">Запишитесь на тест-драйв сегодня и получите скидку 5% на любой автомобиль из нашего каталога.</p>
+          </div>
+        </div>
+        <div class="border border-white/20 rounded-xl bg-gray-900/30 p-9">
+          <form method="post">
+            <h5 class="text-xl font-medium">Оставьте заявку</h5>
+            <div class="flex flex-col">
+              <label class="text-sm opacity-80 mt-5" for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Введите ваше имя" class="focus:outline-none focus:border-gold/50 mt-2 p-1 pl-4 rounded-md bg-gray-900/70 border border-white/10 text-white placeholder-white/20">
+            </div>
+            <div class="flex flex-col">
+              <label class="text-sm opacity-80 mt-5" for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__ " class="focus:outline-none focus:border-gold/50 mt-2 p-1 pl-4 rounded-md bg-gray-900/70 border border-white/10 text-white placeholder-white/20">
+            </div>
+            <div class="flex flex-col">
+              <label class="text-sm opacity-80 mt-5" for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="example@mail.ru" class="focus:outline-none focus:border-gold/50 mt-2 p-1 pl-4 rounded-md bg-gray-900/70 border border-white/10 text-white placeholder-white/20">
+            </div>
+            <div class="flex flex-col">
+              <label class="text-sm opacity-80 mt-5" for="message">Сообщение</label>
+              <textarea name="message" id="message" placeholder="Расскажите, какой автомобиль вас интересует..." class="focus:outline-none focus:border-gold/50 mt-2 p-1 pl-4 pb-12 rounded-md bg-gray-900/70 border border-white/10 text-white placeholder-white/20"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-gold text-black px-6 py-1 rounded-md mt-12 hover:bg-gold/80 transition">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
     </div>
-    <div>
-      <h5>Контакты</h5>
-      <p>г. Москва, Кутузовский проспект, д. 12</p>
-      <p>+7 (923) 678-34-56</p>
-      <p>info@vip-autp.ru</p>
-      <p>Пн-Вс: 09:00 - 21:00</p>
+  </section>
+  
+  <footer class="mt-52 w-full bg-gray-900/30 border border-white/5">
+    <div class="max-w-7xl mx-auto px-6 py-20">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+        <div>
+          <h5 class="text-gold font-medium text-xl">VIP</h5>
+          <p class="text-sm opacity-60 mt-5">Премиальный автосалон класса люкс. Эксклюзивные автомобили для требовательных клиентов</p>
+          <div class="flex mt-4 gap-3">
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-md bg-gray-900/60 hover:bg-gold transition">
+              <i class="fab fa-facebook-f text-white"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-md bg-gray-900/60 hover:bg-gold transition">
+              <i class="fab fa-instagram text-white"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-md bg-gray-900/60 hover:bg-gold transition">
+              <i class="fab fa-twitter text-white"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-md bg-gray-900/60 hover:bg-gold transition">
+              <i class="fab fa-youtube text-white"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h5 class="text-md font-medium">Быстрые ссылки</h5>
+          <div class="mt-4 space-y-1">
+            <p class="text-sm opacity-60 hover:text-gold transition cursor-pointer">Главная</p>
+            <p class="text-sm opacity-60 hover:text-gold transition cursor-pointer">Каталог</p>
+            <p class="text-sm opacity-60 hover:text-gold transition cursor-pointer">О нас</p>
+            <p class="text-sm opacity-60 hover:text-gold transition cursor-pointer">Контакты</p>
+          </div>
+        </div>
+        <div>
+          <h5 class="text-md font-medium">Услуги</h5>
+          <div class="mt-4 space-y-1">
+            <p class="text-sm opacity-60 hover:text-gold transition cursor-pointer">Продажа авто</p>
+            <p class="text-sm opacity-60 hover:text-gold transition cursor-pointer">Trade-In</p>
+            <p class="text-sm opacity-60 hover:text-gold transition cursor-pointer">Кредитование</p>
+            <p class="text-sm opacity-60 hover:text-gold transition cursor-pointer">Сервис</p>
+          </div>
+        </div>
+        <div>
+          <h5 class="text-md font-medium">Контакты</h5>
+          <div class="mt-4 space-y-1">
+            <p class="text-sm opacity-60 hover:text-gold transition cursor-pointer">г. Москва, Кутузовский проспект, д. 12</p>
+            <p class="text-sm opacity-60 hover:text-gold transition cursor-pointer">+7 (923) 678-34-56</p>
+            <p class="text-sm opacity-60 hover:text-gold transition cursor-pointer">info@vip-auto.ru</p>
+            <p class="text-sm opacity-60 hover:text-gold transition cursor-pointer">Пн-Вс: 09:00 - 21:00</p>
+          </div>
+        </div>
+      </div>
+      <hr class="opacity-10 my-10">
+      <div class="flex flex-col md:flex-row justify-between items-center text-sm opacity-40 space-y-2 md:space-y-0">
+        <p>@ 2025 Автосалон VIP. Все права защищены.</p>
+        <div class="flex gap-4">
+          <p class="hover:text-gold transition cursor-pointer">Политика конфиденциальности</p>
+          <p class="hover:text-gold transition cursor-pointer">Условия использования</p>
+        </div>
+      </div>
     </div>
-    <hr>
-    <p>@ 2025 Автосалон VIP. Все права защищены.</p>
-    <p>Политика конфиденциальности</p>
-    <p>Условия использования</p>
   </footer>
-
 </body>
 </html>
