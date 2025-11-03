@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DocumentГлавная страница | VIP Автосалон</title>
+  <title>Главная страница | VIP Автосалон</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -19,23 +19,29 @@
           }
       }
   </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
 </head>
 <body>
-  <header class="fixed top-0 left-0 right-0 bg-black text-white z-50">
+  <header class="fixed top-0 left-0 right-0 bg-black text-white z-50 backdrop-blur-md ">
     <div class="flex flex-col gap-5 md:flex-row items-center justify-between px-8 py-5 max-w-7xl mx-auto">
       <div class="text-gold font-bold text-2xl tracking-wide">VIP</div>
       <nav class="flex flex-col text-center md:flex-row md:space-x-8">
-        <a href="#" class="hover:text-gold transition">Главная</a>
-        <a href="#" class="hover:text-gold transition">Каталог</a>
-        <a href="#" class="hover:text-gold transition">О нас</a>
-        <a href="#" class="hover:text-gold transition">Контакты</a>
+        <a href="#home" class="hover:text-gold transition">Главная</a>
+        <a href="#catalog" class="hover:text-gold transition">Каталог</a>
+        <a href="#about" class="hover:text-gold transition">О нас</a>
+        <a href="#contacts" class="hover:text-gold transition">Контакты</a>
       </nav>
       <div class="hidden md:flex items-center space-x-2">
         <span><i class="fas fa-phone text-sm mr-3 text-gold"></i>+7 923 678 34 56</span>
       </div>
     </div>
   </header>
-  <section class="relative h-screen flex items-center justify-center overflow-hidden">
+  <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
     <video
         autoplay
         muted
@@ -58,17 +64,13 @@
         Эксклюзивный выбор премиальных автомобилей от ведущих мировых производителей
       </h3>
       <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-        <button class="px-8 py-3 bg-gold hover:bg-yellow-700 text-black font-semibold rounded-lg transition transform hover:scale-105 shadow-lg">
-          Смотреть каталог <i class="fa-solid fa-arrow-right ml-2"></i>
-        </button>
-        <button class="px-8 py-3 bg-white hover:bg-gray-100 text-black font-semibold rounded-lg transition transform hover:scale-105 shadow-lg">
-          Связаться с нами
-        </button>
+        <a href="#catalog" class="px-8 py-3 bg-gold hover:bg-yellow-700 text-black font-semibold rounded-lg transition transform hover:scale-105 shadow-lg">Смотреть каталог <i class="fa-solid fa-arrow-right ml-2"></i>
+        <a href="#form" class="px-8 py-3 bg-white hover:bg-gray-100 text-black font-semibold rounded-lg transition transform hover:scale-105 shadow-lg">Связаться с нами</a>
       </div>
     </div>
   </section>
 
-  <section class="plus-section text-center mt-16 py-16 bg-black">
+  <section id="plus" class="plus-section text-center mt-16 py-16 bg-black">
     <h3 class="font-bold text-4xl mb-2">Почему выбирают <span class="text-gold">VIP</span></h3>
     <p class="opacity-60 text-lg max-w-2xl mx-auto">
       Мы предлагаем не просто автомобили, а комплексный премиальный сервис
@@ -113,7 +115,7 @@
     </div>
   </section>
 
-  <section class="catalog text-center mt-16 py-16 bg-black">
+  <section id="catalog" class="catalog text-center mt-16 py-16 bg-black">
     <h3 class="font-bold text-4xl mb-2">Наш <span class="text-gold">каталог</span></h3>
     <p class="opacity-60 text-lg max-w-2xl mx-auto">
       Эксклюзивные коллекции премиальных автомобилей
@@ -197,7 +199,7 @@
     </button>
   </section>
 
-  <section class="about-company text-center mt-16 py-16 bg-black">
+  <section id="about" class="about-company text-center mt-16 py-16 bg-black">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex flex-col lg:flex-row gap-12 items-center">
         <div class="lg:w-1/2 text-left space-y-6">
@@ -243,7 +245,7 @@
     </div>
   </section>
 
-  <section class="bg-black py-24 text-center">
+  <section id="feedback" class="bg-black py-24 text-center">
     <div class="max-w-7xl mx-auto px-4">
       <h2 class="text-4xl font-semibold mb-4">
         Отзывы наших <span class="text-gold">клиентов</span>
@@ -321,7 +323,7 @@
     </div>
   </section>
 
-  <section class="text-center mt-28">
+  <section id="contacts" class="text-center mt-28">
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-4xl font-semibold mb-4">
         Где мы <span class="text-gold">находимся</span>
@@ -367,7 +369,7 @@
     </div>
   </section>
 
-  <section class="text-center mt-28">
+  <section id="form" class="text-center mt-28">
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-4xl font-semibold mb-4">
         Свяжитесь с <span class="text-gold">нами</span>
@@ -516,6 +518,10 @@
       </a>
     </div>
   </div>
+  <button id="scrollToTopBtn" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 w-12 h-12 text-black rounded-full shadow-lgtransition-transform duration-300 opacity-0 invisible z-50 group">
+    <i class="fas fa-arrow-up text-lg text-white group-hover:text-gold"></i>
+  </button>
 <script src="slider.js"></script>
+<script src="arrow_up.js"></script>
 </body>
 </html>
